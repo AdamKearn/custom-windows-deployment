@@ -136,7 +136,7 @@
             <Value>password</Value>
             <PlainText>true</PlainText>
           </Password>
-          <LogonCount>1</LogonCount>
+          <LogonCount>2</LogonCount>
           <Enabled>true</Enabled>
           <Username>Admin</Username>
         </AutoLogon>
@@ -170,6 +170,16 @@
               <Description>Copy the include folder to the C:\</Description>
               <Order>1</Order>
            </SynchronousCommand>
+		   <SynchronousCommand wcm:action="add">
+             <CommandLine>del C:\test_folder\* /S /Q"</CommandLine>
+             <Description>Removeing temp_installers files...</Description>
+             <Order>400</Order>
+           </SynchronousCommand>
+		   <SynchronousCommand wcm:action="add">
+             <CommandLine>rmdir /S /Q "C:\test_folder\"</CommandLine>
+             <Description>Removeing temp_installers folder...</Description>
+             <Order>401</Order>
+           </SynchronousCommand>
            <SynchronousCommand wcm:action="add">
              <CommandLine>CMD /c REG.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v LaunchTo /t REG_DWORD /d 1 /f</CommandLine>
              <Description>Default file explorer to open This PC</Description>
@@ -179,6 +189,11 @@
              <CommandLine>C:\temp_installers\install_all.bat</CommandLine>
              <Description>Installing Software...</Description>
              <Order>3</Order>
+           </SynchronousCommand>
+		   <SynchronousCommand wcm:action="add">
+             <CommandLine>C:\temp_installers\remove_files.bat</CommandLine>
+             <Description>Removeing Files...</Description>
+             <Order>4</Order>
            </SynchronousCommand>
         </FirstLogonCommands>
         <TimeZone>GMT Standard Time</TimeZone>
