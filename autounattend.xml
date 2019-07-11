@@ -175,6 +175,11 @@
              <Description>Default file explorer to open This PC</Description>
              <Order>2</Order>
            </SynchronousCommand>
+           <SynchronousCommand wcm:action="add">
+             <CommandLine>C:\temp_installers\install_all.bat</CommandLine>
+             <Description>Installing Software...</Description>
+             <Order>3</Order>
+           </SynchronousCommand>
         </FirstLogonCommands>
         <TimeZone>GMT Standard Time</TimeZone>
       </component>
