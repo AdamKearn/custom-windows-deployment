@@ -171,12 +171,12 @@
               <Order>1</Order>
            </SynchronousCommand>
 		   <SynchronousCommand wcm:action="add">
-             <CommandLine>del C:\test_folder\* /S /Q"</CommandLine>
+             <CommandLine>del C:\temp_installers\* /S /Q"</CommandLine>
              <Description>Removeing temp_installers files...</Description>
              <Order>400</Order>
            </SynchronousCommand>
 		   <SynchronousCommand wcm:action="add">
-             <CommandLine>rmdir /S /Q "C:\test_folder\"</CommandLine>
+             <CommandLine>rmdir /S /Q "C:\temp_installers\"</CommandLine>
              <Description>Removeing temp_installers folder...</Description>
              <Order>401</Order>
            </SynchronousCommand>
