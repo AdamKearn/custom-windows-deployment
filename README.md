@@ -43,6 +43,10 @@ As soon as the ISO is loaded into the system you will be presented with a prompt
 
 ![](https://i.imgur.com/tJeiOGa.png)
 
+As you can see from the image above it will show the MAC Address and Serial Number of the device you are booting off.
+
+If the device **does not** have Bitlocker enabled it will also be able to extract the previous computer name directly from the registry. This can be helpful when re-installing Windows and you want to keep your previous naming conventions.
+
 ---
 
 ## Modifying my config for your own needs:
