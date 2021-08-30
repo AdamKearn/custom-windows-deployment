@@ -28,7 +28,7 @@
                     </InstallFrom>
                     <WillShowUI>OnError</WillShowUI>
                     <InstallTo>
-                        <DiskID>1</DiskID>
+                        <DiskID>0</DiskID>
                         <PartitionID>4</PartitionID>
                     </InstallTo>
                 </OSImage>
@@ -89,7 +89,7 @@
                             <Format>NTFS</Format>
                         </ModifyPartition>
                     </ModifyPartitions>
-                    <DiskID>1</DiskID>
+                    <DiskID>0</DiskID>
                     <WillWipeDisk>true</WillWipeDisk>
                 </Disk>
                 <WillShowUI>OnError</WillShowUI>
