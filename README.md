@@ -41,7 +41,11 @@ You should then be able to boot the USB and select the appropriate answer file.
 
 As soon as the ISO is loaded into the system you will be presented with a prompt asking for the appropriate information. In my config, I only needed the computer to prompt for the computer name. If you need access to more information in your environment you can modify the `/scripts/edit_unattend.bat` file accordingly.
 
-![](https://i.imgur.com/ibOcKXO.png)
+![](https://i.imgur.com/tJeiOGa.png)
+
+As you can see from the image above it will show the MAC Address and Serial Number of the device you are booting off.
+
+If the device **does not** have Bitlocker enabled it will also be able to extract the previous computer name directly from the registry. This can be helpful when re-installing Windows and you want to keep your previous naming conventions.
 
 ---
 
@@ -95,4 +99,4 @@ For any modifications made to this file please refer to [Microsofts Documentatio
 
 Thanks for checking out my project.  If you have any questions or edits that you would like me to make to the config please let me know by posting a comment in the Issues section. [Link to issues](https://github.com/AdamKearn/windows-10-unattended-install/issues)
 
-A special thanks to Longpanda as this would not have been possible without having Ventoy.
+A special thanks to Longpanda as this would not have been possible without having [Ventoy](https://github.com/ventoy/ventoy).
