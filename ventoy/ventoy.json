@@ -1,0 +1,18 @@
+{
+    "auto_install":[
+        {
+            "parent": "/images/microsoft",
+            "template":[
+                "/images/microsoft/unattended/unattended_setup_UEFI.xml",
+                "/images/microsoft/unattended/unattended_setup_BIOS.xml",
+                "/images/microsoft/unattended/autounattend.xml"
+            ]
+        }
+    ],
+    "injection":[
+        {
+            "parent": "/images/microsoft",
+            "archive":"/scripts/wim_mod.zip"
+        }
+    ]
+}
