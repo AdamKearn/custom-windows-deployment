@@ -3,8 +3,9 @@
         {
             "parent": "/images/microsoft",
             "template":[
-                "/images/microsoft/unattended/unattended_setup_UEFI.xml",
-                "/images/microsoft/unattended/unattended_setup_BIOS.xml",
+                "/images/microsoft/unattended/unattended_setup_W11_UEFI.xml",
+                "/images/microsoft/unattended/unattended_setup_W10_UEFI.xml",
+                "/images/microsoft/unattended/unattended_setup_W10_BIOS.xml",
                 "/images/microsoft/unattended/autounattend.xml"
             ]
         }

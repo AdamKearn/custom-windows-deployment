@@ -63,7 +63,7 @@ If you are needing to also include some custom programs and scripts into the win
 For example, if you wanted to include your own RMM Client for managing the computers after deployment you could create a `temp` folder inside the `C_ROOT` folder and drop the installer in there. And modify the answer file to run the application/script. See the below example.
 
 E.g. `/scripts/C_ROOT/temp/rmm_agent.exe` ==> `C:\temp\rmm_agent.exe`
-```json
+```xml
 <FirstLogonCommands>
     <SynchronousCommand wcm:action="add">
         <Order>1</Order>
